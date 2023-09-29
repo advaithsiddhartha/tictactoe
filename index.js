@@ -133,7 +133,7 @@ function restart(){
     document.getElementById("6").style.color="white";
     document.getElementById("7").style.color="white";
     document.getElementById("8").style.color="white";
-    document.getElementById("8").style.color="white";
+    document.getElementById("9").style.color="white";
     document.querySelector("h1").innerHTML=a+"'s turn"
 }
 
