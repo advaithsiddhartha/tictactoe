@@ -62,14 +62,14 @@ function playy(k){
 
         if(win() != false){
 
-            player = "";
+            
             if(player == "X"){
                 document.querySelector("h1").innerHTML=a+" has wonnn !!!"
             }
             if(player == "O"){
                 document.querySelector("h1").innerHTML=b+" has wonnn !!!"
             }
-            
+            player = "";
             let line = win();
             sig(line[0]);
             sig(line[1]);
