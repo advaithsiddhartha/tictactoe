@@ -10,7 +10,7 @@ function turn () {
         player = "O"
         document.querySelector("h1").innerHTML=b+"'s turn"
     }
-    else{
+    if(player == "O"){
         player = "X"
         document.querySelector("h1").innerHTML=a+"'s turn"
     }
@@ -62,7 +62,7 @@ function playy(k){
 
         if(win() != false){
 
-            
+            player = "";
             if(player == "X"){
                 document.querySelector("h1").innerHTML=a+" has wonnn !!!"
             }
