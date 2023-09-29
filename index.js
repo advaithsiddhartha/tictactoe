@@ -1,5 +1,6 @@
 var a = prompt("enter player of X : ")
 var b = prompt("enter player of Y : ")
+let count = 0
 let boxes = Array.from(document.getElementsByClassName("box"));
 let blanks = Array(9).fill(null);
 let ind = getComputedStyle(document.body).getPropertyValue('--lineblock')
@@ -59,7 +60,8 @@ function playy(k){
     if (!blanks[id]){
          blanks[id] = player 
          k.target.innerText = player
-
+         count = count + 1;
+         console.log(count)
         if(win() != false){
 
             
@@ -93,11 +95,22 @@ function playy(k){
          
     }
 
+    else{
+        
+        if(count == 9){
+            alert(" no more moves left !! .. please play again <3 ");
+        }
+        
+      
+       
+       
+    }
 
 
-
-    
 }
+
+    console.log(count)
+
 const possib=[[1,2,3],
 [4,5,6],
 [7,8,9],
@@ -135,6 +148,7 @@ function restart(){
     document.getElementById("8").style.color="white";
     document.getElementById("9").style.color="white";
     player = "X";
+    count = 0
     document.querySelector("h1").innerHTML=a+"'s turn"
 }
 
