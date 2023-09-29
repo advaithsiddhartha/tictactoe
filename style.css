@@ -1,0 +1,66 @@
+*{
+  background-image: url(./tic-tac-toe-seamless-background-on-dark-blue-illustration-vector.jpg);
+}
+.game-board
+{
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+  background-color: #007bff;
+  color: #fff;
+  border: 6px solid #00ddff;
+  border-radius: 10px;
+	
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.box
+{
+  border: 6px solid #e1ff00;
+  border-radius: 10%;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  border: solid 5px #206588;
+  display: block;
+  margin: 0% auto;
+  margin-top: 50px;
+  padding: 10px  20px;
+  text-shadow: 10px #070707;
+  font-size: large;
+  border-radius: 10%;
+  background-color: #009bfb;
+  font-family: 'Oswald', sans-serif;
+  font-size: x-large;
+  color: #ffffff;
+}
+
+:root{
+  --lineblock:#007bff;
+}
+
+.title{
+  text-align: center;
+  margin: 0% auto;
+  font-size: 5rem;
+  color: #ff0000;
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 1px 0 #070707;
+  
+}
+
+footer {
+  border: 5px #e1ff00;
+  background-color: #070707;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  font-family: 'Oswald', sans-serif;
+  color: #ff0000;
+  font-size: xx-large;
+}
